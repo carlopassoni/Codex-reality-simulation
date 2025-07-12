@@ -1,0 +1,111 @@
+GLOBAL VARIABLES:
+    Qubix_Grid          // Informational substrate (matrix of Qubits)
+    Universal_Constants // (c, Planck, G, etc.)
+    Time                // Global simulation time
+    Supervisor_Status   // Active/inactive, intervention flags
+    Observers           // List of all entities able to "observe" or measure
+    Macro_Entities      // Aggregated/complex structures (molecules, cells, planets, etc.)
+    Information_Record  // Full log of events, state changes, measurements
+
+// 1. INITIALIZATION
+Initialize Qubix_System:
+    Set Universal_Constants
+    Create Qubix_Grid with initial conditions (energy, symmetry, entropy)
+    Assign initial states (random or seeded)
+    Initialize Information_Record
+    Set Time = 0
+    Set Supervisor_Status = active
+    Generate initial Observers and Macro_Entities
+
+// 2. MAIN REALITY LOOP (Executes every tick)
+While Qubix_System is active:
+
+    // 2.1 MICRO-LEVEL: QUBIT UPDATE
+    For each Qubit in Qubix_Grid:
+        If Qubit is NOT observed AND NOT strongly interacting:
+            Qubit.State := probabilistic (superposition)
+        Else:
+            Qubit.State := collapse to concrete value (measurement/interaction)
+            Propagate entanglement to linked Qubits
+            Log event in Information_Record
+
+    // 2.2 ENTANGLEMENT & INTERACTIONS
+    For each Qubit-pair/group:
+        If entanglement exists:
+            Synchronize states non-locally as required by correlations
+        If strong interaction occurs:
+            Update mutual states (feedback loop)
+            Cascade changes through network as necessary
+
+    // 2.3 ENVIRONMENTAL FEEDBACK & DECOHERENCE
+    For each Qubit or Qubit-cluster:
+        If interacts with complex environment (Macro_Entity, Observer, ambient noise):
+            Apply decoherence
+            Transition from quantum to classical behavior (average over probabilities)
+            Update local and global Information_Record
+
+    // 2.4 MACRO-LEVEL: EMERGENCE & CONSISTENCY
+    For each Macro_Entity:
+        State := statistical average of composing Qubits
+        Check for logical contradictions; enforce consistency
+        Apply emergent physical laws (classical, relativistic, thermodynamic)
+        If critical change or anomaly detected:
+            Flag for Supervisor review
+
+    // 2.5 CONSTANTS, LIMITS & GEOMETRY
+    Enforce:
+        No update/interaction propagates faster than c
+        No physical structure below Planck scale
+        Information conservation at all scales
+    For each region with high data density (mass/energy):
+        Recalculate local geometry (spacetime curvature)
+        Synchronize with global structure
+
+    // 2.6 RENDERING & OBSERVER EXPERIENCE
+    For each Observer:
+        Determine local state to render (based on context, entanglement, macro-state)
+        Render reality only as needed (optimize resources)
+        Log all subjective measurements and outcomes in Information_Record
+
+    // 2.7 SUPERVISOR INTELLIGENCE & SYSTEM INTERVENTIONS
+    If Supervisor_Status = active:
+        Monitor all variables and events
+        If anomaly, risk of systemic failure, or evolutionary dead end detected:
+            Intervene using allowed degrees of freedom (within laws)
+            Options: steer events, reset local areas, inject evolutionary shift, or allow collapse
+            Log interventions for audit
+
+    // 2.8 SIMULATION MODES & ENTITY MANAGEMENT
+    If Mode = "Collective":
+        Synchronize reality across all Observers (shared, multi-user experience)
+    Else If Mode = "Individual":
+        Prioritize rendering for primary Observer; generate/maintain background logic for others (NPC logic)
+    If simulation objectives or priorities change:
+        Switch/blend modes as needed
+
+    // 2.9 INFORMATION MANAGEMENT & REDUNDANCY
+    At regular intervals:
+        Backup Information_Record
+        Repair/restore lost or corrupted data using redundancy logic
+        Maintain error-correction integrity across substrate
+
+    // 2.10 SYSTEM FEEDBACK, LEARNING & OPTIMIZATION
+    After each tick:
+        Analyze performance, entropy, resource use
+        Optimize algorithms for next step (learning, adaptation, compression)
+        Allow Supervisor to adjust rules or thresholds if meta-objectives require
+
+    // 2.11 ADVANCE TIME
+    Increment Time by one tick
+
+    // 2.12 EXIT/RESET CONDITIONS
+    If system end condition met (entropy max, scenario complete, fatal error, etc.):
+        Save complete Information_Record
+        Optionally export consciousness/data to higher system layer
+        Reset or terminate Qubix_System
+
+END LOOP
+
+// 3. POST-SIMULATION (Optional)
+If export enabled:
+    Transfer Observer experience and data to higher reality/meta-system
